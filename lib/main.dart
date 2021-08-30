@@ -1,4 +1,5 @@
 import "package:flutter/material.dart";
+import 'package:myapp/homepage.dart';
 
 void main() {
   runApp(MyApp());
@@ -9,22 +10,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    int x = 5;
-    double y = 5.5;
-    String z = "55";
-    bool isApp = true;
-    num a = 2;
-    var day = "Sunday";
-    const pi = 3.1415926535897932384626;
-
     return MaterialApp(
-      home: Material(
-        child: Center(
-          child: Container(
-            child: Text("Hello World $x $y $z $isApp $a $day $pi"),
-          ),
-        ),
-      ),
+      home: HomePage(),
     );
   }
 }
