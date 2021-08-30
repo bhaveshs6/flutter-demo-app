@@ -8,12 +8,16 @@ class HomePage extends StatelessWidget {
     final int x = 5;
     final String z = "55";
 
-    return Material(
-      child: Center(
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("My App"),
+      ),
+      body: Center(
         child: Container(
           child: Text("Hello World $x $z"),
         ),
       ),
+      drawer: Drawer(),
     );
   }
 }
