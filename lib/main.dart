@@ -15,12 +15,13 @@ class MyApp extends StatelessWidget {
     bool isApp = true;
     num a = 2;
     var day = "Sunday";
+    const pi = 3.1415926535897932384626;
 
     return MaterialApp(
       home: Material(
         child: Center(
           child: Container(
-            child: Text("Hello World $x $y $z $isApp $a $day"),
+            child: Text("Hello World $x $y $z $isApp $a $day $pi"),
           ),
         ),
       ),
