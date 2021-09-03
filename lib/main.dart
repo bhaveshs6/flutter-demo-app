@@ -16,11 +16,11 @@ class MyApp extends StatelessWidget {
       themeMode: ThemeMode.light,
       theme: ThemeData(
           primarySwatch: Colors.deepPurple,
-          primaryTextTheme: GoogleFonts.latoTextTheme()),
+          fontFamily: GoogleFonts.lato().fontFamily),
       darkTheme: ThemeData(brightness: Brightness.dark),
       routes: {
-        "/": (context) => HomePage(),
-        "/login": (context) => LoginPage(),
+        "/login": (context) => HomePage(),
+        "/": (context) => LoginPage(),
       },
     );
   }
